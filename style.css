@@ -1,0 +1,38 @@
+/* Link ka google ide u zelenu boju */
+
+a[href^="https://www.google.com"] {
+    color: green;
+}
+
+
+/* Link ka Link Group ide u zelenu boju */
+
+a[href^="https://www.link-group.eu"] {
+    color: red;
+}
+
+
+/* Naizmenično bojenje paragrafa */
+
+#second-div p:nth-child(even) {
+    color: red
+}
+
+#second-div p:nth-child(odd) {
+    color: blue;
+}
+
+
+/* :after na 2 i 3 paragraf */
+
+#first-div>p::after {
+    content: 'NEW';
+    color: yellow;
+}
+
+
+/* ITALIC */
+
+p:nth-child(8):hover {
+    font-style: italic;
+}
